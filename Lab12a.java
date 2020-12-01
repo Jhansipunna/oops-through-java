@@ -14,8 +14,9 @@ public static void main(String args[])
 {
 int x,y;
 Scanner s=new Scanner(System.in);
-System.out.println("enter x,y values:");
+System.out.println("enter x value:");
 x=s.nextInt();
+System.out.println("enter y value:");
 y=s.nextInt();
 System.out.println("before the x and y values are"+x+","+y);
 callbyvalue c=new callbyvalue();
