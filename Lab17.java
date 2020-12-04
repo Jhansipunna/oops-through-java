@@ -5,7 +5,7 @@ interface Student
 }
 interface Depertment
 {
- void cource(String cource);
+ void course(String course);
 }
 interface Attandance extends Student,Depertment
 {
@@ -19,9 +19,9 @@ class Lab17 implements Attendance
   System.out.println("student name :"+name);
   System.out.println("student age :"+age);
  }
- public void cource(String cource)
+ public void course(String course)
  {
-  System.out.println("student cource :"+cource);
+  System.out.println("student course :"+course);
  }
  public void Attend(int attendance)
  {
@@ -35,11 +35,11 @@ class Lab17 implements Attendance
  {
   Lab17 e=new Lab17();
   e.name(84,"vasu",23);
-  e.cource("mca");
+  e.course("mca");
   e.Attend(80);
   Lab17 e1=new Lab17();
   e1.name(1,"teja",21);
-  e1.cource("mca");
+  e1.course("mca");
   e1.Attend(60);
  }
 }
