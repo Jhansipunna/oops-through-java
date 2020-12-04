@@ -9,13 +9,13 @@ interface Depertment
 }
 interface Attandance extends Student,Depertment
 {
- void Attand(int attandance);
+ void Attend(int attendance);
 }
-class Lab17 implements Attandance
+class Lab17 implements Attendance
 {
  public void name(int no,String name,int age)
  {
-  System.out.println("rool no :"+no);
+  System.out.println("roll no :"+no);
   System.out.println("student name :"+name);
   System.out.println("student age :"+age);
  }
@@ -23,10 +23,10 @@ class Lab17 implements Attandance
  {
   System.out.println("student cource :"+cource);
  }
- public void Attand(int attandance)
+ public void Attend(int attendance)
  {
-  System.out.println("attandance is :"+attandance);
-  if(attandance>=75)
+  System.out.println("attendance is :"+attendance);
+  if(attendance>=75)
   System.out.println("he is eligible for exams");
   else
   System.out.println("he is not eligible for exams");
@@ -36,10 +36,10 @@ class Lab17 implements Attandance
   Lab17 e=new Lab17();
   e.name(84,"vasu",23);
   e.cource("mca");
-  e.Attand(80);
+  e.Attend(80);
   Lab17 e1=new Lab17();
   e1.name(1,"teja",21);
   e1.cource("mca");
-  e1.Attand(60);
+  e1.Attend(60);
  }
 }
